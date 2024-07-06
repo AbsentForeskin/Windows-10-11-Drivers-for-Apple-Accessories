@@ -21,10 +21,14 @@ The Apple Magic Keyboard will require you to install the `.inf` files in both th
 
 ## Settings
 ### Function Key Reversal
-To reverse the function of the `Fn` key, change the following `DWORD (32-bit) Value`s in the Registry Editor from `0` to `1`:
+To reverse the function of the `Fn` key, change the following `REG_BINARY` values in the Registry Editor from `01` to `00`:
 
 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\KeyMagic\OSXFnBehavior`
+`HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\KeyMagic2\OSXFnBehavior`
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\KeyMagic\OSXFnBehavior`
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\KeyMagic2\OSXFnBehavior`
+
+Then restart your computer
 
 ### Inverted Scrolling
 To reverse the direction of the scroll wheel the same way macOS does, change the following `DWORD (32-bit) Value` in the Registry Editor from `0` to `1` and restart your PC:
