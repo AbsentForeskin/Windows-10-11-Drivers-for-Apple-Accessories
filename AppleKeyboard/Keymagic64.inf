@@ -11,7 +11,7 @@ Provider=%Provider%
 CatalogFile=KeyMagic64.cat
 DriverPackageDisplayName="Apple Keyboard"
 DriverPackageType=PlugAndPlay
-DriverVer = 06/28/2018,6.1.7000.0
+DriverVer = 11/11/2019,6.1.7800.0
 
 [ControlFlags]
 ExcludeFromSelect = *
@@ -171,6 +171,10 @@ USA.dll,,,COPYFLG_FORCE_FILE_IN_USE
 %USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0262&MI_00
 %USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0263&MI_00
 %USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0264&MI_00
+%USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0273&MI_01
+%USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0274&MI_01
+%USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0290&MI_01
+%USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0291&MI_01
 
 ;***********************************************************************
 ;***** IMPORTANT: Add new keyboards to Keyboard_Table_AddReg below *****
@@ -281,6 +285,10 @@ HKR,"KeyboardTable","VID_05AC&PID_025B",0x00000001,%INTERNAL%,%JIS%,%NEW_LAYOUT%
 HKR,"KeyboardTable","VID_05AC&PID_0262",0x00000001,%INTERNAL%,%ANSI%,%NEW_LAYOUT%, %DELAY_RESET_WELLSPRING%,1		
 HKR,"KeyboardTable","VID_05AC&PID_0263",0x00000001,%INTERNAL%,%ISO%,%NEW_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
 HKR,"KeyboardTable","VID_05AC&PID_0264",0x00000001,%INTERNAL%,%JIS%,%NEW_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
+HKR,"KeyboardTable","VID_05AC&PID_0273",0x00000001,%INTERNAL%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
+HKR,"KeyboardTable","VID_05AC&PID_0274",0x00000001,%INTERNAL%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
+HKR,"KeyboardTable","VID_05AC&PID_0290",0x00000001,%INTERNAL%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
+HKR,"KeyboardTable","VID_05AC&PID_0291",0x00000001,%INTERNAL%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
 
 [Dri_HID_Inst.NT.Wdf]
 KmdfService = KeyMagic, keyboard_wdfsect

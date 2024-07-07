@@ -11,7 +11,7 @@ Provider=%Provider%
 CatalogFile=KeyMagic2.cat
 DriverPackageDisplayName="Apple Magic Keyboard 2"
 DriverPackageType=PlugAndPlay
-DriverVer = 06/21/2018,6.1.7000.0
+DriverVer = 11/11/2019,6.1.7800.0
 
 [ControlFlags]
 ExcludeFromSelect = *
@@ -86,10 +86,7 @@ USA.dll,,,COPYFLG_FORCE_FILE_IN_USE
 %USBKeyboard.DevDesc%=Dri_BTH_Inst,BTHENUM\{00001124-0000-1000-8000-00805f9b34fb}_VID&0001004c_PID&0267
 %USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_026C&MI_01
 %USBKeyboard.DevDesc%=Dri_BTH_Inst,BTHENUM\{00001124-0000-1000-8000-00805f9b34fb}_VID&0001004c_PID&026C
-%USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0273&MI_01
-%USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0274&MI_01
-%USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0290&MI_01
-%USBKeyboard.DevDesc%=Dri_HID_Inst,USB\VID_05AC&PID_0291&MI_01
+
 ;***********************************************************************
 ;***** IMPORTANT: Add new keyboards to Keyboard_Table_AddReg below *****
 ;***********************************************************************
@@ -135,11 +132,6 @@ HKR,"KeyboardTable","VID_05AC&PID_0267",0x00000001,%EXTERNAL_CORDED%,%UNKNOWN_LA
 HKR,"KeyboardTable","_VID&0001004C_PID&0267",0x00000001,%EXTERNAL_BLUETOOTH%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%,%NO_DELAY_RESET%,1
 HKR,"KeyboardTable","VID_05AC&PID_026C",0x00000001,%EXTERNAL_CORDED%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %NO_DELAY_RESET%,1
 HKR,"KeyboardTable","_VID&0001004C_PID&026C",0x00000001,%EXTERNAL_BLUETOOTH%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%,%NO_DELAY_RESET%,1
-HKR,"KeyboardTable","VID_05AC&PID_0273",0x00000001,%INTERNAL%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
-HKR,"KeyboardTable","VID_05AC&PID_0274",0x00000001,%INTERNAL%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
-HKR,"KeyboardTable","VID_05AC&PID_0290",0x00000001,%INTERNAL%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
-HKR,"KeyboardTable","VID_05AC&PID_0291",0x00000001,%INTERNAL%,%UNKNOWN_LANG%,%UNKNOWN_LAYOUT%, %DELAY_RESET_WELLSPRING%,1
-
 
 ;=====================================================================
 ;	Keyboard Layout DLLs
@@ -367,3 +359,4 @@ USBKeyboard.DevDesc="Apple Keyboard"
 HIDKbFlt.SvcDesc="USB Keyboard HID Filter"
 KBDiskName = "AppleKB Install Disk"
 BOOTCAMP_KEY             = "SOFTWARE\Apple Inc.\Boot Camp\Versions"
+
