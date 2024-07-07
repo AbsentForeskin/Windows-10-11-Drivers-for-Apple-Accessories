@@ -2,7 +2,7 @@
 Re-packaged official driver support software enabling the native usage of various Apple accessories and peripherals—including keyboards, mice, and trackpads.
 
 ## Version
-Built with Windows Support version 6.1.7071 (latest version).
+Built with Windows Support version 061-97204 for magic keyboards and 002-34471 for mouse and trackpad.
 
 ## Information
 Apple has released drivers enabling the native usage of their proprietary interface and peripheral devices on Microsoft Windows operating systems. 
